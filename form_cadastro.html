@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulário de Castro</title>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Formulário de Cadastro</h1>
+        <section>
+            
+            <form action="/main.php" method="get">
+                <!--Não adicionei elementos PHP pois acredito que não era o objetivo do trabalho-->
+                <fieldset>
+                    <legend>Informações do Usuário</legend>
+                    <label for="user">Usuario:</label>
+                    <input type="text" id="usuario" name="usuario"><br>
+                    <label for="pw">Senha:</label>
+                    <input type="text" id="senha" name="senha"><br>
+                    <input type="checkbox" name="aUser" id="ativoU">
+                    <label for="aUser">Usuario ativo</label>
+                </fieldset>
+                
+                
+              </form> 
+        </section>
+
+        <section>
+            <form action="/action_page.php" method="get">
+                <fieldset>
+                    <legend>Informações do Usuario</legend>
+                    <label for="nome">Nome:</label>
+                    <input type="text" name="nome" id="nome">
+                    <input type="radio" name="radsex" id="masc">
+                    <label for="masc">Masculino</label>
+                    <input type="radio" name="radsex" id="femi">
+                    <label for="femi">Feminino</label>
+                    <br>
+                    <label for="estado">Estado Sudeste:</label>
+                    <select name="estado" id="estado">
+                        <option value="Espirito Santo">Espirito Santo</option>
+                        <option value="Minas Gerais">Minas Gerais</option>
+                        <option value="Rio de Janeiro">Rio de Janeiro</option>
+                        <option value="Sao Paulo">São Paulo</option>
+                    </select>
+                    <br>
+                    <label for="cupom">Cupom de Desconto:</label>
+                    <input type="text" name="Cupom de Desconto" id="cupom">
+                    <br>
+                    <label for="observacoes">Observações:</label>
+                    <br>   
+                    <textarea name="observacoes" id="observacoes" cols="50" rows="5"></textarea>           
+
+
+                    
+                </fieldset>
+                
+            </form>
+            
+        </section>
+        <br>
+        <input type="submit" value="Enviar">
+    </div>
+    
+</body>
+</html>
